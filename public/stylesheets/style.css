@@ -167,7 +167,7 @@ font-size:1.8rem;
 color:#d2ff00;
 }
 
-/*Project headings use a smaller size than the main heading*/
+/*project headings use a smaller size than the main heading*/
 .project-card h3 {
 font-size:1.4rem;
 }
@@ -178,13 +178,13 @@ color:#c8cbbd;
 line-height:1.8;
 }
 
-/*Project links use lime text*/
+/*project links use lime text*/
 .project-card a {
 color:#d2ff00;
 text-underline-offset:4px;
 }
 
-/*The footer has spacing and a top border*/
+/* the footer has spacing and a top border*/
 .site-footer {
 padding-top:24px;
 padding-bottom:24px;
@@ -231,7 +231,8 @@ padding:24px;
 
 }
 
-/*Project page headings fit inside the cards*/
+
+/*For Projext.ejs*/
 .project-card h2 {
 font-size:1.5rem;
 margin-bottom:16px;
@@ -240,4 +241,33 @@ margin-bottom:16px;
 /*Leaves space above a project when following a homepage link*/
 .project-card[id] {
 scroll-margin-top:24px;
+}
+
+
+/*For contact.ejs*/
+/*The contact email uses the lime accent colour*/
+.contact-link {
+color:#d2ff00;
+overflow-wrap:anywhere;
+}
+
+/*gives the form limited width and space above it*/
+.contact-form {
+max-width:750px;
+margin-top:32px;
+}
+
+/*Form field uses the portfolio colors*/
+.contact-form .form-control {
+padding:12px;
+background-color:#11130f;
+border:1px solid #737b63;
+color:#ebeee0;
+}
+/*Highlights the field thats being used*/
+.contact-form .form-control:focus {
+background-color:#11130f;
+border-color:#d2ff00;
+color:#ebeee0;
+box-shadow:0px 0px 0px 3px rgba(210, 255, 0, 0.2);
 }
