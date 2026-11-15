@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/*The body controls the background, text colour and font*/
+/* this controls the background, text colour and font*/
 body {
 margin:0px;
 min-height:100vh;
@@ -229,4 +229,15 @@ padding:70px 12px 60px;
 padding:24px;
 }
 
+}
+
+/*Project page headings fit inside the cards*/
+.project-card h2 {
+font-size:1.5rem;
+margin-bottom:16px;
+}
+
+/*Leaves space above a project when following a homepage link*/
+.project-card[id] {
+scroll-margin-top:24px;
 }

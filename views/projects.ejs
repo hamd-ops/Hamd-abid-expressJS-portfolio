@@ -1,0 +1,93 @@
+<!--shared header and navigation-->
+<%- include('partials/header') %>
+<!--main contains the projects page content-->
+<main class="container page-content">
+<h1>My Projects</h1>
+<p>
+Here are some of the projects I have worked on during my studies.
+They include programming, object-oriented design, and networking.
+</p>
+<!--2x2 grid using bootstrap-->
+<div class="row g-4 mt-3">
+<!--Flappy Bird project-->
+<div class="col-md-6">
+<article class="project-card h-100" id="flappy-bird">
+<!--icon for flappy bird, source in readme and lecture.-->
+<i class="fa-solid fa-gamepad project-icon" aria-hidden="true"></i>
+<!--project title and description-->
+<h2>Flappy Bird</h2>
+<p>
+I recreated the Flappy Bird game for a high school term assignment.
+This project gave me practice with player movement and game behaviour.
+</p>
+
+<p>
+<strong>Focus:</strong> Programming and game development.
+</p>
+
+</article>
+</div>
+
+<!--Wordie project-->
+<div class="col-md-6">
+<article class="project-card h-100" id="wordie">
+<!--icon for wordie, source in readme and lecture.-->
+<i class="fa-solid fa-keyboard project-icon" aria-hidden="true"></i>
+
+<h2>Wordie</h2>
+<p>
+Wordie was a final project for my Intro to Programming course.
+It helped me apply basic programming concepts while developing
+a complete word-guessing game.
+</p>
+<p>
+<strong>Focus:</strong> Programming logic and user input.
+</p>
+
+</article>
+</div>
+
+<!--Car rental project-->
+<div class="col-md-6">
+<article class="project-card h-100" id="car-rental">
+<!--icon for car rental-->
+<i class="fa-solid fa-car project-icon" aria-hidden="true"></i>
+
+<h2>Car Rental System</h2>
+<p>
+I worked on a car rental system for my Object Oriented Programming
+course. Classes and objects were used to organize the different
+parts of the system.
+</p>
+<p>
+<strong>Focus:</strong> Classes, objects, and program organization.
+</p>
+
+</article>
+</div>
+
+<!--Networking project-->
+<div class="col-md-6">
+<article class="project-card h-100" id="networking">
+<!--icon for networking-->
+<i class="fa-solid fa-network-wired project-icon" aria-hidden="true"></i>
+
+<h2>Networking Project</h2>
+<p>
+This group project was for Introduction to Networking 2 involved
+designing and configuring a network using routing and switching.
+We tested the network to check that devices could communicate.
+</p>
+<p>
+<strong>Focus:</strong> Network design, configuration, and testing.
+</p>
+
+</article>
+</div>
+
+</div>
+
+</main>
+
+<!--Includes the shared footer-->
+<%- include('partials/footer') %>
