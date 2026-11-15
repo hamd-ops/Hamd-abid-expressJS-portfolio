@@ -1,8 +1,232 @@
+@charset "UTF-8";
+
+/*The body controls the background, text colour and font*/
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+margin:0px;
+min-height:100vh;
+display:flex;
+flex-direction:column;
+font-family:Arial, Verdana, sans-serif;
+background:radial-gradient(ellipse at top right, #282c20 0%, #11130f 60%);
+color:#ebeee0;
 }
 
-a {
-  color: #00B7FF;
+/*The main content grows to keep the footer at the bottom*/
+main {
+flex:1;
+}
+
+/*The navigation has a dark background and rounded corners*/
+.site-nav {
+padding:16px;
+background-color:#181a16;
+border:1px solid #414735;
+border-radius:20px;
+}
+
+/*The name is displayed on the left of the navigation*/
+.navbar-brand {
+font-size:1.5rem;
+font-weight:bold;
+}
+
+/*The dot beside the name uses the lime accent colour*/
+.navbar-brand span {
+color:#d2ff00;
+}
+
+/*Navigation links have spacing between them*/
+.site-nav .nav-link {
+margin-left:12px;
+color:#ebeee0;
+}
+
+/*Navigation links change colour when hovered*/
+.site-nav .nav-link:hover {
+color:#d2ff00;
+}
+
+/*The inner pages have space above and below the content*/
+.page-content {
+padding-top:80px;
+padding-bottom:80px;
+}
+
+/*Inner page headings use the lime accent colour*/
+.page-content h1 {
+margin-bottom:24px;
+color:#d2ff00;
+}
+
+/*Paragraphs have extra line spacing*/
+.page-content p {
+line-height:1.8;
+}
+
+/*The introduction has space around its content*/
+.intro {
+padding:110px 16px 90px;
+}
+
+/*The small heading uses lime text and wider letter spacing*/
+.intro-label {
+color:#d2ff00;
+font-size:0.85rem;
+letter-spacing:2px;
+}
+
+/*The main heading changes size with the screen width*/
+.intro h1 {
+font-size:clamp(2.8rem, 7vw, 5.5rem);
+font-weight:bold;
+margin:24px 0px;
+}
+
+/*My name uses the lime accent colour*/
+.intro h1 span {
+color:#d2ff00;
+}
+
+/*The introduction paragraph stays centered with a limited width*/
+.intro-description {
+max-width:650px;
+margin:0px auto 32px;
+color:#c8cbbd;
+line-height:1.8;
+}
+
+/*Both homepage buttons use the same spacing and shape*/
+.button-lime,
+.button-outline {
+padding:12px 24px;
+border-radius:12px;
+font-weight:bold;
+transition:background-color 0.3s, color 0.3s;
+}
+
+/*The main button uses a lime background*/
+.button-lime {
+background-color:#d2ff00;
+border:1px solid #d2ff00;
+color:#11130f;
+}
+
+/*The main button becomes lighter when hovered*/
+.button-lime:hover {
+background-color:#ebeee0;
+border-color:#ebeee0;
+color:#11130f;
+}
+
+/*The second button uses an outline*/
+.button-outline {
+border:1px solid #737b63;
+color:#ebeee0;
+}
+
+/*The second button changes colour when hovered*/
+.button-outline:hover {
+background-color:#282c20;
+border-color:#d2ff00;
+color:#d2ff00;
+}
+
+/*The featured section has space before the footer*/
+.featured {
+margin-bottom:80px;
+}
+
+/*The featured heading uses bold text*/
+.featured h2 {
+font-weight:bold;
+}
+
+/*The description below the heading uses lighter grey text*/
+.featured > p {
+color:#c8cbbd;
+}
+
+/*Project cards have a dark background and rounded border*/
+.project-card {
+padding:32px;
+background-color:#181a16;
+border:1px solid #414735;
+border-radius:20px;
+transition:border-color 0.3s;
+}
+
+/*The card border turns lime when hovered*/
+.project-card:hover {
+border-color:#d2ff00;
+}
+
+/*Project icons use the lime accent colour*/
+.project-icon {
+margin-bottom:24px;
+font-size:1.8rem;
+color:#d2ff00;
+}
+
+/*Project headings use a smaller size than the main heading*/
+.project-card h3 {
+font-size:1.4rem;
+}
+
+/*Project descriptions have extra line spacing*/
+.project-card p {
+color:#c8cbbd;
+line-height:1.8;
+}
+
+/*Project links use lime text*/
+.project-card a {
+color:#d2ff00;
+text-underline-offset:4px;
+}
+
+/*The footer has spacing and a top border*/
+.site-footer {
+padding-top:24px;
+padding-bottom:24px;
+border-top:1px solid #414735;
+}
+
+/*Footer links use light text without underlines*/
+.site-footer a {
+color:#ebeee0;
+text-decoration:none;
+}
+
+/*Footer links change colour when hovered*/
+.site-footer a:hover {
+color:#d2ff00;
+}
+
+/*Shows which link or button is selected using the keyboard*/
+a:focus-visible,
+button:focus-visible {
+outline:3px solid #d2ff00;
+outline-offset:4px;
+}
+
+/*Adjusts spacing on smaller screens*/
+@media (max-width:767px) {
+
+.site-nav .nav-link {
+margin-left:0px;
+}
+
+.page-content {
+padding-top:50px;
+padding-bottom:50px;
+}
+
+.intro {
+padding:70px 12px 60px;
+}
+
+.project-card {
+padding:24px;
+}
+
 }

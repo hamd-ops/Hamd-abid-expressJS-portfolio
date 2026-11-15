@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+
+<!--Helps the website adjust to different screen sizes-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--Displays the title passed from the page route-->
+<title><%= title %> | Hamd Abid</title>
+
+<!--Bootstrap provides layout and navigation styles-->
+<link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+
+<!--Font Awesome provides the website icons-->
+<link rel="stylesheet" href="/fontawesome/css/all.min.css">
+
+<!--Custom stylesheet loads after Bootstrap-->
+<link rel="stylesheet" href="/stylesheets/style.css">
+
+</head>
+
+<body>
+
+<!--Shared header used on all four pages-->
+<header class="container pt-4">
+
+<!--Navigation expands on medium and larger screens-->
+<nav class="navbar navbar-expand-md navbar-dark site-nav">
+<div class="container-fluid">
+
+<!--Name links back to the homepage-->
+<a class="navbar-brand" href="/">Hamd Abid<span>.</span></a>
+
+<!--Button opens and closes the navigation on smaller screens-->
+<button class="navbar-toggler" type="button"
+data-bs-toggle="collapse"
+data-bs-target="#mainNavigation"
+aria-controls="mainNavigation"
+aria-expanded="false"
+aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<!--Navigation links connect the four pages-->
+<div class="collapse navbar-collapse" id="mainNavigation">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="/">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="/about">About Me</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="/projects">Projects</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="/contact">Contact Me</a>
+</li>
+
+</ul>
+
+</div>
+</div>
+</nav>
+
+</header>

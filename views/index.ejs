@@ -1,11 +1,82 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
-</html>
+<!--Includes the shared header and navigation-->
+<%- include('partials/header') %>
+
+<!--Main contains the homepage content-->
+<main class="container">
+
+<!--Introduction is centered on the page-->
+<section class="intro text-center">
+
+<p class="intro-label">NETWORKING &amp; IT SECURITY STUDENT</p>
+
+<h1>Hello, I'm <span>Hamd Abid.</span></h1>
+
+<p class="intro-description">
+I am a Networking and IT Security student with an interest
+in networking, cybersecurity, and web development.
+This portfolio showcases some of my past work and projects while studying.
+</p>
+
+<!--Buttons link to the projects and contact pages-->
+<div class="d-flex flex-wrap justify-content-center gap-3">
+
+<a class="btn button-lime" href="/projects">
+View Projects
+<i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+</a>
+
+<a class="btn button-outline" href="/contact">Contact Me</a>
+
+</div>
+
+</section>
+
+<!--Shows previews of selected projects-->
+<section class="featured">
+
+<h2>Featured Projects</h2>
+<p>A selection of work from my studies.</p>
+
+<!--Bootstrap grid places the cards beside each other on wider screens-->
+<div class="row g-4 mt-2">
+
+<!--First project preview-->
+<div class="col-md-6">
+<article class="project-card h-100">
+
+<i class="fa-solid fa-gamepad project-icon" aria-hidden="true"></i>
+
+<h3>dont know yet</h3>
+
+<p>
+</p>
+<!--will add the link and description- later-->
+<a href="">View Project</a>
+
+</article>
+</div>
+
+<!--Second project preview-->
+<div class="col-md-6">
+<article class="project-card h-100">
+
+<i class="fa-solid fa-network-wired project-icon" aria-hidden="true"></i>
+
+<h3>Networking Project</h3>
+
+<p>
+</p>
+
+<a href="">View Project</a>
+
+</article>
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+<!--Includes the shared footer-->
+<%- include('partials/footer') %>
