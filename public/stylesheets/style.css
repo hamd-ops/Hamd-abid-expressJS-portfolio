@@ -231,32 +231,28 @@ padding:24px;
 
 }
 
-
 /*For Projext.ejs*/
 .project-card h2 {
 font-size:1.5rem;
 margin-bottom:16px;
 }
 
-/*Leaves space above a project when following a homepage link*/
+/*Leaves space above a project when a homepage link is clicked*/
 .project-card[id] {
 scroll-margin-top:24px;
 }
 
-
 /*For contact.ejs*/
-/*The contact email uses the lime accent colour*/
+/*when hovering it uses the lime accent colour*/
 .contact-link {
 color:#d2ff00;
 overflow-wrap:anywhere;
 }
-
 /*gives the form limited width and space above it*/
 .contact-form {
 max-width:750px;
 margin-top:32px;
 }
-
 /*Form field uses the portfolio colors*/
 .contact-form .form-control {
 padding:12px;
@@ -271,3 +267,18 @@ border-color:#d2ff00;
 color:#ebeee0;
 box-shadow:0px 0px 0px 3px rgba(210, 255, 0, 0.2);
 }
+
+
+/* this is for image in about me*/
+.about-image {
+display:block;
+width:100%;
+max-width:260px;
+height:320px;
+object-fit:cover;
+object-position:center 70%;
+margin:0px auto;
+border-radius:15px;
+border:1px solid #414735;
+}
+

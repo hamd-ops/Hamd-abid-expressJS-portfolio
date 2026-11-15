@@ -1,56 +1,76 @@
-<!--the shared header and navigation-->
+<!--Includes the shared header and navigation-->
 <%- include('partials/header') %>
 
 <!--Main contains the about page content-->
 <main class="container page-content">
 
 <h1>About Me</h1>
-<!--This is for intro section-->
+
+<!--Introduction contains my photo and information-->
 <section class="project-card">
+
+<!--Bootstrap places the photo and text beside each other-->
+<div class="row align-items-center g-4">
+
+<!--Photo moves above the text on smaller screens-->
+<div class="col-md-4 text-center">
+<img class="about-image" src="/images/hamd-abid-image.jpg"
+alt="Photo of Hamd Abid">
+</div>
+
+<!--Introduction text-->
+<div class="col-md-8">
 
 <h2>Introduction</h2>
 
 <p>
 I'm Hamd Abid, a Networking and IT Security student
-studyingat Ontario Tech University.
+studying at Ontario Tech University.
 </p>
 
 <p>
 I created this portfolio to share the projects I have
-worked on during my studies, from programming,
+worked on during my studies in programming,
 networking, and cybersecurity.
 </p>
 
+</div>
+</div>
+
 </section>
 
-<!--three boxes for my interests-->
+<!--Three boxes for my interests-->
 <section class="mt-5">
 
 <h2>My Interests</h2>
 
-<!--three columns-->
+<!--Bootstrap creates three columns on wider screens-->
 <div class="row g-4 mt-2">
 
+<!--First interest-->
 <div class="col-md-4">
 <div class="project-card h-100">
-<!--icon for networking, link in readme-->
+
 <i class="fa-solid fa-network-wired project-icon" aria-hidden="true"></i>
-<!--first interest-->
+
 <h3>Networking</h3>
+
 <p>
-learning about how networks are designed, configured,
+Learning about how networks are designed, configured,
 and maintained, and how they can be secured.
 </p>
 
 </div>
 </div>
 
+<!--Second interest-->
 <div class="col-md-4">
 <div class="project-card h-100">
-<!--icon for cybersecurity, link in readme-->
+
 <i class="fa-solid fa-shield-halved project-icon" aria-hidden="true"></i>
-<!--second interest-->
+
 <h3>Cybersecurity</h3>
+
 <p>
 Learning about security threats and how networks
 and systems can be protected.
@@ -59,12 +79,14 @@ and systems can be protected.
 </div>
 </div>
 
+<!--Third interest-->
 <div class="col-md-4">
 <div class="project-card h-100">
-<!--icon for web development, link in readme-->
+
 <i class="fa-solid fa-code project-icon" aria-hidden="true"></i>
-<!--third interest-->
+
 <h3>Web Development</h3>
+
 <p>
 Building responsive websites and learning
 how server-side applications work.
